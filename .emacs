@@ -6,3 +6,4 @@
                          ("marmalade" . "https://marmalade-repo.org/packages/")
                          ("melpa" . "https://melpa.org/packages/")))
 (setq-default indent-tabs-mode nil)
+(add-hook 'write-file-hooks 'delete-trailing-whitespace nil t)
